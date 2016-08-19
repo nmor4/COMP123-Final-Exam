@@ -12,8 +12,7 @@ namespace COMP123_S2016_FinalExam
 {
     public partial class GenerateNameForm : Form
     {
-        List<string> FirstNames = new List<string>();
-        List<string> LastNames = new List<string>();
+        
 
         Random _random = new Random();
 
@@ -22,16 +21,40 @@ namespace COMP123_S2016_FinalExam
             InitializeComponent();
         }
 
+        //Private methods----------------------------------------
         private void GenerateNames()
         {
-            foreach (string fname in FirstNameListBox)
-            {
+            fname value
 
+            List<string> FirstNames = new List<string>();
+            List<string> LastNames = new List<string>();
+
+            foreach (string fname in FirstNameListBox.Items)
+            {
+                FirstNames.Add(fname);
             }
+
+            FirstNameTextbox.Text = this._random.Next(FirstNames.)
+
+
         }
         
 
+
+        //Event Handlers--------------------------------------
         private void GenerateButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AbilityGeneratorForm abilityGeneratorForm = new AbilityGeneratorForm();
+            abilityGeneratorForm.Show();
+        }
+
+        private void GenerateNameForm_Load(object sender, EventArgs e)
         {
 
         }

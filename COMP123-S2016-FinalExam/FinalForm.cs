@@ -19,6 +19,7 @@ namespace COMP123_S2016_FinalExam
             InitializeComponent();
         }
 
+        //Event Handlers-------------------------------------------
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Step 1 - instantiate an object of the AboutBox form
@@ -47,6 +48,9 @@ namespace COMP123_S2016_FinalExam
             IntelligenceTextBox.Text = Program.character.Intelligence;
             WisdomTextBox.Text = Program.character.Wisdom;
             CharismaTextBox.Text = Program.character.Charisma;
+            RaceTextBox.Text = Program.character.Race;
+            FirstNameBox.Text = Program.character.FirstName;
+            LastNameTextBox.Text = Program.character.LastName;
 
           
         }

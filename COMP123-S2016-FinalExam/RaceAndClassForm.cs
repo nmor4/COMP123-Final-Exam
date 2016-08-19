@@ -22,6 +22,9 @@ namespace COMP123_S2016_FinalExam
             InitializeComponent();
         }
 
+
+        //EVENT HANDLERS------------------------------------------
+
         private void BackButton_Click(object sender, EventArgs e)
         {
             Character character = Program.character;
@@ -35,6 +38,7 @@ namespace COMP123_S2016_FinalExam
             this.Close();
         }
 
+        
         private void RaceRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton selectedRace = (RadioButton)sender;
@@ -50,5 +54,7 @@ namespace COMP123_S2016_FinalExam
             finalForm.Show();
             this.Hide();
         }
+
+       
     }
 }

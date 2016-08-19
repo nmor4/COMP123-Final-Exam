@@ -53,9 +53,9 @@
             this.LastNameLabel2 = new System.Windows.Forms.Label();
             this.LastNameTextBox = new System.Windows.Forms.TextBox();
             this.FirstNameLabel2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FirstNameBox = new System.Windows.Forms.TextBox();
             this.RaceLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.RaceTextBox = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.AbilityGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -326,14 +326,14 @@
             this.FirstNameLabel2.TabIndex = 9;
             this.FirstNameLabel2.Text = "First Name";
             // 
-            // textBox1
+            // FirstNameBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(224, 66);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 30);
-            this.textBox1.TabIndex = 8;
+            this.FirstNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstNameBox.Location = new System.Drawing.Point(224, 66);
+            this.FirstNameBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FirstNameBox.Name = "FirstNameBox";
+            this.FirstNameBox.Size = new System.Drawing.Size(201, 30);
+            this.FirstNameBox.TabIndex = 8;
             // 
             // RaceLabel
             // 
@@ -346,14 +346,14 @@
             this.RaceLabel.TabIndex = 13;
             this.RaceLabel.Text = "Race";
             // 
-            // textBox2
+            // RaceTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(224, 182);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 30);
-            this.textBox2.TabIndex = 12;
+            this.RaceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RaceTextBox.Location = new System.Drawing.Point(224, 182);
+            this.RaceTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RaceTextBox.Name = "RaceTextBox";
+            this.RaceTextBox.Size = new System.Drawing.Size(201, 30);
+            this.RaceTextBox.TabIndex = 12;
             // 
             // FinalForm
             // 
@@ -363,11 +363,11 @@
             this.ClientSize = new System.Drawing.Size(672, 592);
             this.ControlBox = false;
             this.Controls.Add(this.RaceLabel);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.RaceTextBox);
             this.Controls.Add(this.LastNameLabel2);
             this.Controls.Add(this.LastNameTextBox);
             this.Controls.Add(this.FirstNameLabel2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FirstNameBox);
             this.Controls.Add(this.AbilityGroupBox);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.BackButton);
@@ -415,8 +415,8 @@
         private System.Windows.Forms.Label LastNameLabel2;
         private System.Windows.Forms.TextBox LastNameTextBox;
         private System.Windows.Forms.Label FirstNameLabel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox FirstNameBox;
         private System.Windows.Forms.Label RaceLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox RaceTextBox;
     }
 }

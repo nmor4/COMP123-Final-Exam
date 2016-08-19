@@ -6,6 +6,11 @@ using System.Windows.Forms;
 
 namespace COMP123_S2016_FinalExam
 {
+
+    /* Application: COMP123 Final Exam - Character Creator
+     * Nick Morin - 300654901
+     * 2016-08-19
+     */ 
     public static class Program
     {
         public static Character character = new Character();
