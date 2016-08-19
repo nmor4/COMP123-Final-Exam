@@ -24,7 +24,8 @@ namespace COMP123_S2016_FinalExam
         //Private methods----------------------------------------
         private void GenerateNames()
         {
-            fname value
+            int fnamevalue;
+            int lnamevalue;
 
             List<string> FirstNames = new List<string>();
             List<string> LastNames = new List<string>();
@@ -33,22 +34,31 @@ namespace COMP123_S2016_FinalExam
             {
                 FirstNames.Add(fname);
             }
+            foreach (string lname in LastNameListbox.Items)
+            {
+                LastNames.Add(lname);
+            }
 
-            FirstNameTextbox.Text = this._random.Next(FirstNames.)
 
+            fnamevalue = _random.Next(0, 14);
+            FirstNameTextbox.Text = FirstNames[fnamevalue];
 
+            lnamevalue = _random.Next(0,14);
+            LastNameTextBox.Text = LastNames[lnamevalue];
         }
-        
+
 
 
         //Event Handlers--------------------------------------
         private void GenerateButton_Click(object sender, EventArgs e)
         {
-
+            this.GenerateNames();
         }
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            Program.character.FirstName = FirstNameTextbox.Text;
+            Program.character.LastName = LastNameTextBox.Text;
             this.Hide();
             AbilityGeneratorForm abilityGeneratorForm = new AbilityGeneratorForm();
             abilityGeneratorForm.Show();
@@ -56,7 +66,7 @@ namespace COMP123_S2016_FinalExam
 
         private void GenerateNameForm_Load(object sender, EventArgs e)
         {
-
+            this.GenerateNames();
         }
     }
 }

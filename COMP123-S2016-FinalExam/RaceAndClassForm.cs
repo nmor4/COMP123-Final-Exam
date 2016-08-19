@@ -48,6 +48,7 @@ namespace COMP123_S2016_FinalExam
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            Program.character.Race = _selectedRace;
             FinalForm finalForm = new FinalForm();
             finalForm.previousForm = this;
 
