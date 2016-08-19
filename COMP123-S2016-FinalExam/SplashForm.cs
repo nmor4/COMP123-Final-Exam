@@ -21,8 +21,8 @@ namespace COMP123_S2016_FinalExam
         {
             SplashTimer.Stop();
             this.Hide();
-            AbilityGeneratorForm abilityGeneratorForm = new AbilityGeneratorForm();
-            abilityGeneratorForm.Show();
+            GenerateNameForm nameGenerateForm = new GenerateNameForm();
+            nameGenerateForm.Show();
         }
     }
 }
